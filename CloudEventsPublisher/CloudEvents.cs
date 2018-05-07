@@ -59,6 +59,7 @@ namespace CloudEventsPublisher
         /// </summary>
         public CloudEvents()
         {
+            CloudEventsVersion = "0.1";
             EventID = Guid.NewGuid().ToString();
             EventType = "shipevent";
             EventTime = DateTime.UtcNow.ToString("o");
